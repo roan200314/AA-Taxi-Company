@@ -24,7 +24,7 @@ if (
 
     if ($mysqli->query($sql) === TRUE) {
         echo "New record created successfully";
-        header("Location: registreren.php");
+        header("Location: ../forms/registreren.php");
     } else {
         echo "Error: " . $sql . "<br>" . $mysqli->error;
     }

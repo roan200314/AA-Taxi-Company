@@ -13,7 +13,7 @@
     <?php
     include "../navbar/navbar.php"
     ?>
-    <form action="contactCheck.php" method="post">
+    <form action="../behandel/contactCheck.php" method="post">
 
         <div class="container">
             <label for="E-mail"><b>E-mail</b></label>

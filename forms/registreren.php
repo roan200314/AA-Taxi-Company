@@ -14,7 +14,7 @@
     include "../navbar/navbar.php"
     ?>
 
-    <form action="registrerenCheck.php" method="post">
+    <form action="../behandel/registrerenCheck.php" method="post">
 
         <div class="container">
             <label for="First name"><b>Voornaam</b></label>

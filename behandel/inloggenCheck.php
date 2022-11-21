@@ -30,7 +30,7 @@ if (!empty($user)) {
         exit();
     }
 } else {
-    header("Location: inloggen.php");
+    header("Location: ../forms/inloggen.php");
     exit();
 }
 

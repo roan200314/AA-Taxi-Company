@@ -50,7 +50,7 @@ if (!empty($_SESSION['userData'])) {
                 <a href="../deleteFunctions/account-delete.php?id=<?php echo $user["id"] ?>" class="btn btn-danger">Delete</a>
             </td>
             <a href="../logout/logout.php">Logout</a></td>
-            <a href="bewerk-gebruiker.php?id=<?php echo $user["id"] ?>" class="btn btn-warning">Update</a></td>
+            <a href="account-update.php?id=<?php echo $user["id"] ?>" class="btn btn-warning">Update</a></td>
         </tr>
     </tbody>
 

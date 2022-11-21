@@ -14,7 +14,7 @@
     include "../navbar/navbar.php"
     ?>
 
-    <form action="inloggenCheck.php" method="post">
+    <form action="../behandel/inloggenCheck.php" method="post">
 
         <div class="container">
             <label for="mail"><b>E-Mail</b></label>

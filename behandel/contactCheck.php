@@ -17,7 +17,7 @@ if (
 
     if ($mysqli->query($sql) === TRUE) {
         echo "New record created successfully";
-        header("Location: contact.php");
+        header("Location: ../forms/contact.php");
     } else {
         echo "Error: " . $sql . "<br>" . $mysqli->error;
     }
