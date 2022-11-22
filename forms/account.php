@@ -25,6 +25,7 @@ if (!empty($_SESSION['userData'])) {
 
 <body>
     <?php
+    session_abort();
     include "../navbar/navbar.php"
     ?>
     <thead>

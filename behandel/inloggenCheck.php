@@ -20,13 +20,13 @@ if (!empty($user)) {
         $_SESSION["user_id"] = $user['id'];
 
         // var_dump($_SESSION);die;
-        header("Location: registreren.php");
+        header("Location: ../forms/registreren.php");
 
 
         exit();
     } else {
         $_SESSION["wrong_pas"] = true;
-        header("Location: inloggen.php");
+        header("Location: ../forms/inloggen.php");
         exit();
     }
 } else {
