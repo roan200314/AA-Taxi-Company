@@ -10,11 +10,10 @@
 </head>
 
 <body class="parent">
-    <div class="Navbar">
+        <img id="logo" src="../images/fake_taxi_logo.png" alt="">
         <?php
         include "../navbar/navbar.php";
         ?>
-    </div>
     <div class="Main">
         <div class="title"><h1>Onze Chaffeurs</h1></div>
         <div class="card-1"></div>
