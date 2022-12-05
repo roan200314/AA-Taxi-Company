@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <img src="../images/fake_taxi_logo.png" alt="">
     <?php
     include "../navbar/navbar.php";
     ?>
