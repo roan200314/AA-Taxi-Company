@@ -1,11 +1,14 @@
+
 .parent {
     display: grid;
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: repeat(15, 1fr);
     grid-column-gap: px;
     grid-row-gap: 15px;
+    background-color: #242424;
     }
 
     .div1 { grid-area: 7 / 1 / 16 / 16; }
     .div2 { grid-area: 1 / 4 / 3 / 13; }
     .div3 { grid-area: 3 / 2 / 7 / 15; }
+
