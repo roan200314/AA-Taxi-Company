@@ -13,11 +13,10 @@ session_start();
             <a href="../forms/klanten-overzicht.php">Klanten Overzicht</a> <?php
                                                                         }
                                                                     } ?>
-    <div class="nav2">
-        <a href="../forms/inloggen.php">Login</a>
-        <a href="../forms/registreren.php">registreren</a>
-        <div class="dot2"></div>
-    </div>
     <div class="dot"></div>
-
+</nav>
+<nav class="nav2">
+    <a href="../forms/inloggen.php">Login</a>
+    <a href="../forms/registreren.php">registreren</a>
+    <div class="dot2"></div>
 </nav>
