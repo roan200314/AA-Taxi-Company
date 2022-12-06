@@ -11,17 +11,24 @@
 
 <body>
     <div class="parent">
-        <div class="logo">
-             <img src="../images/fake_taxi_logo.png" alt="Logo van taxi" class="logo">
-        </div>
+    <div>
+        <img class="Logo" id="logo" src="../images/fake_taxi_logo.png" alt="">
+    </div>
+        <div id="nav-vakje">
         <?php
-        //include "../navbar/navbar.php";
+        include "../navbar/navbar.php";
         ?>
-        
-            <div class="div1">
-
-            </div>
         </div>
+    <div class="Main">
+        <div class="title">
+            <h1>Onze Chauffeurs</h1>
+        </div>
+        <div class="card-1"><img src="../images/sins.jpg" alt=""></div>
+        <div class="card-2"></div>
+        <div class="card-3"></div>
+        <div class="order"></div>
+    </div>
+    </div>
 </body>
 
 </html>
