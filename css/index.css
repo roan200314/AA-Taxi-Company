@@ -10,7 +10,7 @@
     }
 
     .Logo { 
-        grid-area: 7 / 1 / 16 / 16; 
+        grid-area: 1 / 2 / 16 / 16;
     }
     .Navbar { 
         grid-area: 1 / 4 / 3 / 13;  
