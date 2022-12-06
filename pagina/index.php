@@ -25,9 +25,9 @@
         </div>
     <div class="Main">
         <div class="title">
-            <h1>Onze Chaffeurs</h1>
+            <h1>Onze Chauffeurs</h1>
         </div>
-        <div class="card-1"></div>
+        <div class="card-1"><img src="../images/sins.jpg" alt=""></div>
         <div class="card-2"></div>
         <div class="card-3"></div>
         <div class="order"></div>
