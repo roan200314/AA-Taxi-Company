@@ -5,38 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/inloggen.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/logo.css">
     <title>Fake Taxi: Login</title>
 </head>
 
 <body>
-
-    <?php
-    include "../navbar/navbar.php"
-    ?>
-
-    <form action="../behandel/inloggenCheck.php" method="post">
-
-        <div class="container">
-            <label for="mail"><b>E-Mail</b></label>
-            <input type="text" placeholder="Vul E-mail in.." name="email" required><br>
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Vul wachtwoord in.." name="wachtwoord" required><br>
-
-
-            <?php
-            if (!empty($_SESSION["wrong_pas"])) {
-                if ($_SESSION["wrong_pas"] == true) {
-                    echo "<p style=color:red>Gegevens kloppen niet</p>";
-                }
-            } ?>
-
-
-            <button id="buttonBestel" type="submit" value="submit">Login</button>
+    <div class="parent">
+    <img class="Logo" id="logo" src="../images/fake_taxi_logo.png" alt="">
+        <div id="nav-vakje">
+             
         </div>
-
-
-    </form>
+        <div class="main" >
+            <div class="box">
+                <form action="" method="POST">
+                <div class="form">
+                    <h2>Login</h2>
+                    <div class="inputBox">
+                        <input type="text" name="email" required="required">
+                        <span>Email</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" name="wachtwoord" id="wachtwoord" required="required">
+                        <span>Wachtwoord</span>
+                        <i></i>
+                    </div>
+                    <?php
+                    if (!empty($_SESSION["wrong_pas"])) {
+                        if ($_SESSION["wrong_pas"] == true) {
+                            echo "<p style=color:red>Gegevens kloppen niet</p>";
+                        }
+                    } ?>
+                    <div class="links">
+                        <a href="#">Wachtwoord vergeten?</a>
+                        <a href="#">Account maken</a>
+                    </div>
+                    <input type="submit" value="Login">
+                </div>
+                </form>
+            </div>
+        </div> 
+    </div>
 </body>
-
 </html>

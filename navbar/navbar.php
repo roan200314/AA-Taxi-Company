@@ -1,7 +1,7 @@
-<?php 
+<?php
 session_start();
 ?>
-<nav class="Navbar">
+<nav class="navMenu">
     <a href="../pagina/index.php">Home</a>
     <a href="../forms/bestellen.php">Bestellen</a>
     <a href="../forms/contact.php">Contact</a>
@@ -15,4 +15,5 @@ session_start();
             <a href="../forms/klanten-overzicht.php">Klanten Overzicht</a> <?php
                                                                         }
                                                                     } ?>
+    <div class="dot"></div>
 </nav>
