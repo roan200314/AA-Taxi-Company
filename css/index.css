@@ -14,14 +14,14 @@
     }
     .Navbar { 
         grid-area: 1 / 4 / 3 / 13;  
-    background-color: #242424;
+        background-color: #242424;
     }
     
     .Main { 
         grid-area: 3 / 1 / 15 / 16;
         border-style: solid;
         border-width: 10px;
-        border-color: #db842c;
+        border-color: #ed6307;
         border-radius: 75px;
 
         display: grid; 
@@ -44,26 +44,208 @@
     .card-1 { grid-area: card-1; 
         display: flex;
         border-radius: 25px;
-        background-color: #db842c;
+        background-color: #ed6307;
         margin-left: 10%;
         margin-right: 10%;
+        flex-direction: column;
     }
     .card-2 { grid-area: card-2; 
         display: flex;
         border-radius: 25px;
-        background-color: #db842c;
+        background-color: #ed6307;
         margin-left: 10%;
         margin-right: 10%;
+        flex-direction: column;
     }
     .card-3 { grid-area: card-3; 
         display: flex;
         border-radius: 25px;
-        background-color: #db842c;
+        background-color: #ed6307;
         margin-left: 10%;
-        margin-right: 10%; 
+        margin-right: 10%;
+        flex-direction: column;
     }
     .order { grid-area: order; 
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
+#img1 {
+    width: 405px;
+    height: 250px;
+    position: relative;
+}
+#img2 {
+    width: 405px;
+    height: 250px;
+}
+#img3 {
+    width: 405px;
+    height: 250px;
+}
+/* ----------------------------------------------- ster rating */
+.stars {
+    display:inline-block;
+    width:auto;
+    position:relative;
+    font-size:28px;
+    border:2px outset black;
+    border-radius:5px;
+    background-color:ed6307;
+    margin:5px;
+}
+/*
+the BEFORE:pseudo element. This will represent the number of stars in the actual rating.
+it floats above the AFTER element.
+*/
+.stars:BEFORE {
+    content:"★★★★★";
+    position:absolute;
+    overflow:hidden;
+    z-index:1;
+    left:0px;
+    top:0px;
+/* everything below here is optional. */
+    color:#FC0;
+    text-shadow:0px 1px 0 #000, 0 -1px 0 #fff;
+}
+/*
+the AFTER:pseudo element. This will represent the total possible  stars available. It is set to relative to ensure it takes up the proper amount of space.
+*/
+.stars:AFTER {
+    content:"★★★★★";
+    position:relative;
+    color:#fff;
+}
+/*
+if including user rating controls, float the AFTER element.
+*/
+.stars.rate:AFTER {
+    position:absolute;
+    left:0px;
+}
+/*
+default state for the  user rating controls. invisible, but floating above the BEFORE and AFTER elements
+*/
+.stars.rate > A {
+    color:transparent;
+    text-decoration:none;
+    position:relative;
+    z-index:2;
+}
+/*
+if the user is floating thier mouse above the rating, hide the display stars.
+*/
+.stars.rate:HOVER:BEFORE,
+.stars.rate:HOVER:AFTER {
+    display:none;
+}
+/*
+turn all sthe start "ON" by default.
+*/
+.stars.rate:HOVER > A {
+    color:#FC0;
+    text-shadow:0px 1px 0 #000, 0 -1px 0 #fff;
+}
+/*
+optional style for the specific star control a user is directly above.
+*/
+.stars.rate:HOVER > A:HOVER {
+    color:#FC0;
+    text-shadow:0px 2px 0 #000, 0 -1px 0 #fff;
+    top:-1px;
+}
+/*
+turn "OFF" all stars after the one the user is hovering over.
+*/
+.stars.rate >A:HOVER ~ A {
+    color:#fff;
+    text-shadow:none;
+}
+
+.stars:NOT([data-percent]):BEFORE,
+.stars[data-percent="0"]:BEFORE {
+    display:none;
+}
+/* 1/2 a star */
+.stars[data-percent="10"]:BEFORE {
+    width:10%;
+}
+/* 1 star */
+.stars[data-percent="20"]:BEFORE {
+    width:20%;
+}
+/* 1 & 1/2 stars */
+.stars[data-percent="30"]:BEFORE {
+    width:30%;
+}
+/* etc. */
+.stars[data-percent="40"]:BEFORE {
+    width:40%;
+}
+.stars[data-percent="50"]:BEFORE {
+    width:50%;
+}
+.stars[data-percent="60"]:BEFORE {
+    width:60%;
+}
+.stars[data-percent="70"]:BEFORE {
+    width:70%;
+}
+.stars[data-percent="80"]:BEFORE {
+    width:80%;
+}
+.stars[data-percent="90"]:BEFORE {
+    width:90%;
+}
+.stars[data-percent="100"]:BEFORE {
+    width:100%;
+}
+
+/* ---------------------------------------------------------------- bestel knop */
+
+.button-73 {
+  float: right;
+  padding-bottom: 45px;
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-73:hover {
+  background-color: #FFC229;
+  box-shadow: #ed6307 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button-73 {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+} 

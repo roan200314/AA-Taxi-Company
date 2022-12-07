@@ -1,4 +1,5 @@
 #logo {
+    display: grid;
     width: 382px;
     height: 74px;
 }
