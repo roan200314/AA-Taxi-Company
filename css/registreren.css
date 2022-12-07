@@ -1,0 +1,23 @@
+ .parent {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: 100vh;
+} 
+.main{
+    display: grid;
+    grid-area: 8 / 8 / 6/ 8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}

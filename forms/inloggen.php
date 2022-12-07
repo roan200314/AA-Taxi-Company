@@ -22,7 +22,7 @@
         </div>
         <div class="main" >
             <div class="box" >
-                <form action="" method="POST">
+                <form action="inloggenCheck.php" method="POST">
                 <div class="form">
                     <h2>Login</h2>
                     <div class="inputBox">
@@ -43,7 +43,7 @@
                     } ?>
                     <div class="links">
                         <a href="#">Wachtwoord vergeten?</a>
-                        <a href="#">Account maken</a>
+                        <a href="registreren.php">Account maken</a>
                     </div>
                     <input type="submit" value="Login">
                 </div>

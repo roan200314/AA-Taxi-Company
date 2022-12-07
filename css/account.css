@@ -1,0 +1,15 @@
+body{
+ margin: 0;
+}
+
+.info{
+    background-color: orange;
+    grid-area: 5 / 15 / 14 / 2;
+    border-radius: 15px;
+}
+.info h1{
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    text-align: center;
+}
