@@ -2,4 +2,10 @@
     display: grid;
     width: 382px;
     height: 74px;
+
+}
+.Logo{
+   display: grid;
+   grid-column-start: 2;
+   grid-column-end: 4;
 }
