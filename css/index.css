@@ -7,10 +7,6 @@
     height: 100vh;
     background-color: #242424;
     }
-
-    .Logo { 
-        grid-area: 1 / 2 / 16 / 16;
-    }
     .Navbar { 
         grid-area: 1 / 4 / 3 / 13;  
     background-color: #242424;
