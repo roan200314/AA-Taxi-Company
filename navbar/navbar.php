@@ -6,6 +6,8 @@ session_start();
     <a href="../forms/bestellen.php">Bestellen</a>
     <a href="../forms/contact.php">Contact</a>
     <a href="../forms/Account.php">Account</a>
+    <a href="../forms/inloggen.php">Login</a>
+    <a href="../forms/registreren.php">registreren</a>
     <?php
     if (!empty($_SESSION['userData'])) {
         if ($_SESSION["userData"]["rol"] == "medewerker") {
@@ -14,9 +16,4 @@ session_start();
                                                                         }
                                                                     } ?>
     <div class="dot"></div>
-</nav>
-<nav class="nav2">
-    <a href="../forms/inloggen.php">Login</a>
-    <a href="../forms/registreren.php">registreren</a>
-    <div class="dot2"></div>
 </nav>
