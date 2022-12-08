@@ -13,7 +13,11 @@
     }
     .Navbar { 
         grid-area: 1 / 4 / 3 / 13;  
-    background-color: #242424;
+        background-color: #242424;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #db842c;
     }
     
     .Main { 

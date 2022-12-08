@@ -6,23 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/logo.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <title>Fake Taxi: Contact</title>
 </head>
 
-<body>
-    <?php
-    include "../navbar/navbar.php"
-    ?>
-    <form class="Main" action="../behandel/contactCheck.php" method="post">
+<body class="parent">
+    <div>
+        <img class="Logo" id="logo" src="../images/fake_taxi_logo.png" alt="">
+    </div>
+    <div id="nav-vakje">
+        <?php
+        include "../navbar/navbar.php";
+        ?>
+    </div>
+    <div class="Main">
         <div class="container">
-            <label for="E-mail"><b>E-mail</b></label>
-            <input type="text" placeholder=" Vul E-mail in.." name="email" required><br>
-            <br>
-            <label for="bericht"><b>Bericht</b></label>
-            <textarea id="subject" name="bericht" placeholder="schrijf bericht.."></textarea>
-
-            <button id="contactButton" type="submit" id="reg-button">Verstuur</button>
+            <form action="../behandel/contactCheck.php" method="post">
+                <div class="form-rij">
+                    <div>
+                        <input type="text" name="naam" required><br>
+                        <label><b>E-mail</b></label>
+                    </div>
+                    <div>
+                        <input type="text" name="achternaam" required><br>
+                        <label><b>E-mail</b></label>
+                    </div>
+                    <div>
+                        <input type="text" name="email" required><br>
+                        <label><b>E-mail</b></label>
+                    </div>
+                </div>
+                <div class="form-rij-textarea">
+                    <div>
+                        <textarea id="subject" name="bericht"></textarea>
+                        <label><b>Bericht</b></label>
+                    </div>
+                </div>
+                <div class="form-rij submit-knop">
+                    <div class="input-data">
+                        <div class="inner"></div>
+                        <input type="submit" value="Sturen">
+                    </div>
+                </div>
+            </form>
         </div>
-    </form>
+    </div>
 </body>
+
 </html>

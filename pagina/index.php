@@ -16,7 +16,7 @@
         <div>
             <img class="Logo" id="logo" src="../images/fake_taxi_logo.png" alt="">
         </div>
-        <div id="nav-vakje">
+        <div class="Navbar" id="nav-vakje">
             <?php
             include "../navbar/navbar.php";
             ?>

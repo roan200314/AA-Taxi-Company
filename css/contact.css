@@ -22,4 +22,11 @@
     border-width: 10px;
     border-color: #db842c;
     border-radius: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    color: #db842c;
 }
