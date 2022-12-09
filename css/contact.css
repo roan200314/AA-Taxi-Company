@@ -1,21 +1,4 @@
-.parent {
-    display: grid;
-    grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: repeat(15, 1fr);
-    grid-column-gap: px;
-    grid-row-gap: 15px;
-    height: 100vh;
-    background-color: #242424;
-}
 
-.Logo { 
-    grid-area: 1 / 2 / 16 / 16;
-}
-.Navbar { 
-    grid-area: 1 / 4 / 3 / 13;  
-    background-color: #242424;
-}
-    
 .Main { 
     grid-area: 3 / 1 / 15 / 16;
     border-style: solid;
