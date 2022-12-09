@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/registreren.css">
+    <link rel="stylesheet" href="../css/Header.css">
     <title>Fake Taxi: Registreren</title>
 </head>
 
 <body>
-
-    <?php
-    include "../navbar/navbar.php"
-    ?>
-
+<div class="parent">
+        <div class="logo">
+            <img class="Logo" id="logo" src="../images/fake_taxi_logo.png" alt="">
+        </div>
+        <div class="Navbar">
+            <?php include '../navbar/navbar.php' ?>
+        </div>
+    <div class="Main">
     <form action="../behandel/registrerenCheck.php" method="post">
 
         <div class="container">
@@ -44,6 +49,8 @@
             <button id="buttonBestel" type="submit" id="reg-button">Registreren</button>
         </div>
     </form>
+    </div>
+</div>
 </body>
 
 </html>

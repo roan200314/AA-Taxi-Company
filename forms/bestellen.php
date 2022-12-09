@@ -6,16 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bestellen.css">
+    <link rel="stylesheet" href="../css/Header.css">
     <title>Fake Taxi: Bestellen</title>
 </head>
 
 <body>
-    <?php
-    include "../navbar/navbar.php"
-    ?>
-    <form action="../behandel/bestellenCheck.php" method="post">
+    <div class="parent">
+        <div class="logo">
+            <img class="Logo" id="logo" src="../images/fake_taxi_logo.png" alt="">
+        </div>
+        <div class="Navbar">
+            <?php include '../navbar/navbar.php' ?>
+        </div>
 
-        <div class="container">
+
+        <div class="Main">
+        <form action="../behandel/bestellenCheck.php" method="post">
             <label for="naam"><b>Naam</b></label>
             <input type="text" placeholder=" Vul Naam in.." name="naam" required><br>
 
@@ -38,8 +44,8 @@
             </div>
 
             <button id="buttonBestel" type="submit" id="reg-button">Bestellen</button>
+            </form>
         </div>
-    </form>
 </body>
 
 </html>
