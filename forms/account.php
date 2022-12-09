@@ -63,7 +63,7 @@ if (!empty($_SESSION['userData'])) {
 
             <?php }
             } else {
-                echo "U bent nog niet ingelogt, registreer of log in om wat te zien."; ?>
+                echo "U bent nog niet ingelogt, registreer of log in om wat te zien.";  ?>
                 <li><a href="registreren.php">Registreren</a></li>
                 <li><a href="inloggen.php">Inloggen</a></li>
             <?php }  ?>
