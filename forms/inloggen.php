@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    hi
     <div class="parent">
         <div class="logo">
             <img class="Logo" id="logo" src="../images/fake_taxi_logo.png" alt="">
