@@ -37,7 +37,7 @@
             </div>
             <div class="card-2"><img id="img2" src="../images/abella.jfif" alt="" style="border-radius: 25%;">
                 <div class="card-2text">
-                    <p id="card-naam"><b>Naam:</b> Abella Danger</p><br>
+                    <p id="card-naam"><b>Naam:</b></p><p id="name2"> Abella Danger</p><br>
                     <p><b>Beschrijving:</b> Abella Danger is een zeer ervaren chauffeur die lang bij ons in dienst is. Zo is Abella een echte praatjesmaker die ervoor zal zorgen dat jouw rit zeer vermakelijk eindigd.</p>
                     <br>
                     <div class="part">

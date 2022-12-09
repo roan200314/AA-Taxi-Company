@@ -36,7 +36,14 @@
         width: 333px;
         flex-direction: column;
     }
+    #img1{
+        height: 333px;
+    }
     #card-naam{
+        display: flex;
+        float: left;
+    }
+    #name2{
         display: flex;
         justify-content: center;
     }
