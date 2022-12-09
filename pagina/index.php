@@ -27,7 +27,8 @@
             </div>
             <div class="card-1"><img id="img1" src="../images/sins.jpg" alt="" style="border-radius: 25%;">
                 <div class="card-1text">
-                    <p id="card-naam"><b>Naam:</b> Johnny Sins</p><br>
+                    <p id="card-naam"><b>Naam:</b></p>
+                    <p id="name1"> Johnny Sins</p><br>
                     <p><b>Beschrijving:</b> Johnny Sins is een zeer ervaren chauffeur die lang bij ons in dienst is. Zo is Johnny een echte praatjesmaker die ervoor zal zorgen dat jouw rit zeer vermakelijk eindigd.</p>
                     <br>
                     <div class="part">
@@ -38,7 +39,8 @@
             </div>
             <div class="card-2"><img id="img2" src="../images/abella.jfif" alt="" style="border-radius: 25%;">
                 <div class="card-2text">
-                    <p id="card-naam"><b>Naam:</b></p><p id="name2"> Abella Danger</p><br>
+                    <p id="card-naam"><b>Naam:</b></p>
+                    <p id="name2"> Abella Danger</p><br>
                     <p><b>Beschrijving:</b> Abella Danger is een zeer ervaren chauffeur die lang bij ons in dienst is. Zo is Abella een echte praatjesmaker die ervoor zal zorgen dat jouw rit zeer vermakelijk eindigd.</p>
                     <br>
                     <div class="part">
@@ -49,7 +51,8 @@
             </div>
             <div class="card-3"><img id="img3" src="../images/mia.jpg" alt="" style="border-radius: 25%;">
                 <div class="card-3text">
-                    <p id="card-naam"><b>Naam:</b> Mia Khalifa</p><br>
+                    <p id="card-naam"><b>Naam:</b></p>
+                    <p id="name3"> Mia Khalifa</p><br>
                     <p><b>Beschrijving:</b> Mia Khalifa is een zeer ervaren chauffeur die lang bij ons in dienst is. Zo is Mia een echte praatjesmaker die ervoor zal zorgen dat jouw rit zeer vermakelijk eindigd.</p>
                     <br>
                     <div class="part">

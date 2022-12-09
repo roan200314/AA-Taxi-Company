@@ -49,7 +49,15 @@
         display: flex;
         float: left;
     }
+    #name1{
+        display: flex;
+        justify-content: center;
+    }
     #name2{
+        display: flex;
+        justify-content: center;
+    }
+    #name3{
         display: flex;
         justify-content: center;
     }
