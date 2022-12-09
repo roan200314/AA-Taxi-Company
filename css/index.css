@@ -1,12 +1,6 @@
-
   body{
     background-color: black;
 }
-
-    .Navbar { 
-        grid-area: 1 / 4 / 3 / 13;  
-        background-color: #242424;
-    }
     
     .Main { 
         display: grid; 
