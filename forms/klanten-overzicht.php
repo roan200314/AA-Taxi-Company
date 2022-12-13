@@ -31,18 +31,30 @@ session_abort();
             <?php include '../navbar/navbar.php' ?>
         </div>
         <div class="Main">
-            <div class="middle">
-                <div class="card-1">
-                    <div class="accounts">
-                        <?php foreach ($user as $user) : ?>
-                            <tr>
-                                Account name: <?php echo $user["voornaam"] ?>
-                                <a href="../deleteFunctions/medewerker-delete-klant.php?id=<?php echo $user["id"] ?>" class="btn-danger">Delete</a><br>
-                            </tr>
-                        <?php endforeach; ?>
-                    </div>
-                </div>
-            </div>
+                    <table class="table">
+                            <thead>
+                                <tr>
+                                    
+                                    <th>id</th>
+                                    <th>Voornaam</th>
+                                    <th>Achternaam</th>
+                                    <th>email</th>
+                                    <th>Rol</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php foreach ($user as $user) : ?>
+                                    <tr style="text-align: center;">
+                                        <td><?php echo $user["id"] ?></td>
+                                        <td><?php echo $user["voornaam"] ?></td>
+                                        <td><?php echo $user["achternaam"] ?></td>
+                                        <td><?php echo $user["email"] ?></td>
+                                        <td><?php echo $user["rol"] ?></td>
+                                        <td><a style="color: red;" href="user-delete.php?id=<?php echo $user["id"] ?>" class="btn btn-danger">Delete</a></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>  
         </div>
     </div>
 </body>
