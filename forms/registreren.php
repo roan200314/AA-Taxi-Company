@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/logo.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/registreren.css">
+    <link rel="stylesheet" href="../css/registreren.css">
+    <link rel="stylesheet" href="../css/header.css">
     <title>Fake Taxi: Registreren</title>
 </head>
 
