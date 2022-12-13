@@ -3,17 +3,8 @@ body{
 }
 
 .bestel {
-  grid-area: 2/18/5/7;
+  display: grid;
 }
-  .Main { 
-    display: grid; 
-    grid-area: 7 / 1 / 31 / 31;
-    border-style: solid;
-    border-width: 10px;
-    border-color: #ed6307;
-    border-radius: 75px;
-    margin-bottom: -15px;
-  }
 
 .dropbtn {
     background-color: rgba(255, 128, 0, 0.851);
@@ -43,9 +34,17 @@ body{
     text-decoration: none;
     display: block;
   }
-  
-  
   .dropdown:hover .dropdown-content {display: block;}
+
+  .card-1 { grid-area: card-1; 
+    display: flex;
+    background-color: #ed6307;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 333px;
+    flex-direction: column;
+}
+  
 
   .Main { 
     display: grid; 
@@ -56,10 +55,22 @@ body{
     border-radius: 75px;
     margin-bottom: -15px;
     
+    display: grid; 
     grid-auto-columns: 1fr; 
-    grid-auto-rows: 1fr; 
     grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 4em 1fr 4em; 
+    grid-template-rows: 1fr 1fr 1fr; 
     gap: 0px 0px; 
+    grid-template-areas: 
+      "middle middle middle"
+      "middle middle middle"
+      "middle middle middle"; 
+
 }
+
+.middle {
+   grid-area: middle; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
   

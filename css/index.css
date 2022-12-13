@@ -27,15 +27,6 @@
         align-items: center;
         justify-content: center;
     }
-    .card-1 { grid-area: card-1; 
-        display: flex;
-        border-radius: 25px;
-        background-color: #ed6307;
-        margin-left: 10%;
-        margin-right: 10%;
-        width: 333px;
-        flex-direction: column;
-    }
     #img1{
         height: 333px;
     }
@@ -54,6 +45,15 @@
     #name3{
         display: flex;
         justify-content: center;
+    }
+    .card-1 { grid-area: card-1; 
+        display: flex;
+        border-radius: 25px;
+        background-color: #ed6307;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 333px;
+        flex-direction: column;
     }
     .card-2 { grid-area: card-2; 
         display: flex;
