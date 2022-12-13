@@ -42,6 +42,7 @@ if (!empty($_SESSION['userData'])) {
         </thead>
         <tbody>
             <tr>
+                <h2>
                 Voornaam: <?php echo $user["voornaam"] ?><br>
                 Achternaam: <?php echo $user["achternaam"] ?><br>
                 E-mail: <?php echo $user["email"] ?><br>
@@ -54,10 +55,12 @@ if (!empty($_SESSION['userData'])) {
                     Postcode:
                 <td><?php echo $user["postcode"] ?><br>
                     <br>
-                    <a href="../deleteFunctions/account-delete.php?id=<?php echo $user["id"] ?>" class="btn btn-danger">Delete</a>
-                </td>
-                <a href="../logout/logout.php">Logout</a></td>
-                <a href="account-update.php?id=<?php echo $user["id"] ?>" class="btn btn-warning">Update</a></td>
+                <button class="button button1"><a href="../deleteFunctions/account-delete.php?id=<?php echo $user["id"] ?>" class="btn btn-danger">Delete</a></button>
+                <button class="button button2"><a href="../logout/logout.php">Logout</a></td></button>
+                <button class="button button3"><a href="account-update.php?id=<?php echo $user["id"] ?>" class="btn btn-warning">Update</a></td></button>
+                </h2>
+                
+                </td> 
             </tr>
         </tbody>
 
