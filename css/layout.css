@@ -19,11 +19,11 @@
 body{
     background-color: black;
 }
-.Navbar{
+/* .Navbar{
     grid-area: 3 / 4 / 4 / 13;
     background-color: black;
     border-radius: 75PX;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
