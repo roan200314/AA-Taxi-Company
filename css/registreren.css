@@ -6,4 +6,36 @@
     border-color: #ed6307;
     border-radius: 75px;
     margin-bottom: -15px;
+    
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "middle middle middle"
+      "middle middle middle"
+      "middle middle middle"; 
+
 }
+
+.middle {
+   grid-area: middle; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.card-1 { grid-area: card-1; 
+    display: flex;
+    background-color: #ed6307;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 333px;
+    flex-direction: column;
+}
+  
+.register {
+    display: grid;
+}
+/* ------------------------------------------------------- */

@@ -24,7 +24,7 @@
             <div class="title">
                 <h1>Onze Chauffeurs</h1>
             </div>
-            <div class="card-1"><img id="img1" src="../images/sins.jpg" alt="" style="border-radius: 25%;">
+            <div class="card-1"><img id="img1" src="../images/sins.jpg" alt="" style="border-radius: 50%;">
                 <div class="card-1text">
                     <p id="card-naam"><b>Naam:</b></p>
                     <p id="name1"> Johnny Sins</p><br>
@@ -36,7 +36,7 @@
                     <button class="button-73" role="button">Bestel</button>
                 </div>
             </div>
-            <div class="card-2"><img id="img2" src="../images/abella.jfif" alt="" style="border-radius: 25%;">
+            <div class="card-2"><img id="img2" src="../images/abella.jfif" alt="" style="border-radius: 50%;">
                 <div class="card-2text">
                     <p id="card-naam"><b>Naam:</b></p>
                     <p id="name2"> Abella Danger</p><br>
@@ -48,7 +48,7 @@
                     <button class="button-73" role="button">Bestel</button>
                 </div>
             </div>
-            <div class="card-3"><img id="img3" src="../images/mia.jpg" alt="" style="border-radius: 25%;">
+            <div class="card-3"><img id="img3" src="../images/mia.jpg" alt="" style="border-radius: 50%;">
                 <div class="card-3text">
                     <p id="card-naam"><b>Naam:</b></p>
                     <p id="name3"> Mia Khalifa</p><br>

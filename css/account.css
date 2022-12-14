@@ -1,10 +1,16 @@
-*{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.card-1 { grid-area: card-1; 
+    display: flex;
+    background-color: #ed6307;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 333px;
+    flex-direction: column;
 }
-/* Account vak styling */
-.account-informatie { 
-    display: grid;
-    grid-area: 7 / 1 / 20 / 10;
+  
+
+  .Main { 
+    display: grid; 
+    grid-area: 7 / 1 / 31 / 31;
     border-style: solid;
     /* border-width: 10px; */
     border-color: #ed6307;
