@@ -29,7 +29,7 @@ if (!empty($user)) {
 
         $_SESSION['name'] = $user['firstname']; 
         //als alles is uitgevoerd ga naar account.php.
-        header("Location: ../forms/account2.php");
+        header("Location: ../forms/account.php");
         exit();
     } else {
         $_SESSION["wrong_pas"] = true;

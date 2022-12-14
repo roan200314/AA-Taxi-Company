@@ -54,6 +54,7 @@
         margin-right: 10%;
         width: 333px;
         flex-direction: column;
+        padding: 4px;
     }
     .card-2 { grid-area: card-2; 
         display: flex;
@@ -63,6 +64,7 @@
         margin-right: 10%;
         width: 333px;
         flex-direction: column;
+        padding: 4px;
     }
     .card-3 { grid-area: card-3; 
         display: flex;
@@ -72,6 +74,7 @@
         margin-right: 10%;
         width: 333px;
         flex-direction: column;
+        padding: 4px;
     }
     .order { grid-area: order; 
         display: flex;
