@@ -1,17 +1,67 @@
-.Main { 
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Account vak styling */
+.account-informatie { 
     display: grid;
-    grid-area: 7 / 1 / 31 / 31;
+    grid-area: 7 / 1 / 20 / 10;
     border-style: solid;
-    border-width: 10px;
+    /* border-width: 10px; */
     border-color: #ed6307;
     background-color: #ed6307;
     border-radius: 75px;
     margin-bottom: -15px;
+    justify-content: center;
+    padding: 5px;
+}
+.account-informatie h1{
+    padding: 0px;
+    margin: 0px;
+    text-align: center; 
+}
+.account-informatie h3{
+
 }
 h2{
-    margin-top: 20px;
-    margin-left: 20px;    
+    margin-top: 0px;
+    margin-left: 20px;
 }
+/*order vak styling */
+.order-informatie{
+    grid-area: 7 / 10 / 31 / 31;
+    background-color: #ed6307;
+    border-style: solid;
+    /* border-width: 5px; */
+    border-color: #ed6307;    
+    border-radius: 75px;
+    margin-bottom: -15px;
+    justify-content: center;
+    padding: 10px;
+    border-style: solid;
+}
+
+.order-informatie h1{
+    margin-top: 10px;
+    text-align: center;
+
+}
+/* idk */
+.idk h1{
+    text-align: center;
+}
+.idk{
+    background-color: #ed6307;
+    border-style: solid;
+    border-color: #ed6307;
+    grid-area: 21 / 1 / 31 / 10;
+    border-radius: 75px;
+    text-align: center;
+    padding: 15px;
+}
+.idk p{
+    padding: 10px;
+}
+
 .button {
     border: none;
     color: white;
@@ -23,6 +73,6 @@ h2{
     margin: 4px 2px;
     cursor: pointer;
   }
-  .button1 {border-radius: 20px; background-color: red;}
-  .button2 {border-radius: 20px; background-color: black; }
-  .button3 {border-radius: 20px; background-color: royalblue;}
+  .button1 {border-radius: 50%; background-color: red;}
+  .button2 {border-radius: 50%; background-color: black; }
+  .button3 {border-radius: 50%; background-color: royalblue;}
