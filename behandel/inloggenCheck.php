@@ -33,7 +33,7 @@ if (!empty($user)) {
         exit();
     } else {
         $_SESSION["wrong_pas"] = true;
-        header("Location: inloggen.php");
+        header("Location: ../forms/inloggen.php");
         exit();
     }
 }

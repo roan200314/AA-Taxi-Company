@@ -34,46 +34,52 @@ if (!empty($_SESSION['userData'])) {
             <?php session_abort();
             include "../navbar/navbar.php" ?>
         </div>
-        <div class="Main">
-            <div class="middle">
-                
-                <div class="card-1">
-                    <div class="account">
-                        <thead>
-                            <?php
-                            if (!empty($_SESSION['userData'])) {
-                                if ($_SESSION["userData"]["rol"] == "medewerker" || "klant") {  ?>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                Voornaam: <?php echo $user["voornaam"] ?><br>
-                                Achternaam: <?php echo $user["achternaam"] ?><br>
-                                E-mail: <?php echo $user["email"] ?><br>
-                                Wachtwoord: <td><?php echo $user["wachtwoord"] ?><br>
-                                    Geboortedatum: <?php echo $user["geboortedatum"] ?><br>
-                                    Telefoonnummer:
-                                <td><?php echo $user["telefoonnummer"] ?><br>
-                                    Adres:
-                                <td><?php echo $user["adres"] ?><br>
-                                    Postcode:
-                                <td><?php echo $user["postcode"] ?><br>
-                                    <br>
-                                    <a href="../deleteFunctions/account-delete.php?id=<?php echo $user["id"] ?>" class="btn btn-danger">Delete</a>
-                                </td>
-                                <a href="../logout/logout.php">Logout</a></td>
-                                <a href="account-update.php?id=<?php echo $user["id"] ?>" class="btn btn-warning">Update</a></td>
-                            </tr>
-                        </tbody>
-
-                    <?php }
-                            } else {
-                                echo "U bent nog niet ingelogt, registreer of log in om wat te zien.";  ?>
-                    <li><a href="registreren.php">Registreren</a></li>
-                    <li><a href="inloggen.php">Inloggen</a></li>
-                <?php }  ?>
-                    </div>
-                </div>
-            </div>
+        <div class="order-informatie">
+                <h1>Bestel informatie</h1>
+        </div>
+        <div class="idk">
+            <h1>RandomInfo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum expedita reprehenderit, magnam unde deleniti cumque eveniet. Aspernatur cum asperiores ex, voluptates ut esse soluta voluptatum qui, porro autem nostrum tenetur.</p>
+        </div>
+        <div class="account-informatie">
+                <thead>
+                    <?php
+                    if (!empty($_SESSION['userData'])) {
+                        if ($_SESSION["userData"]["rol"] == "medewerker" || "klant") {  ?>
+                </thead>
+                <tbody>
+                    <tr>
+                        <h1>Gegevens</h1>
+                        <h3>
+                            Voornaam: <?php echo $user["voornaam"] ?><br>
+                            Achternaam: <?php echo $user["achternaam"] ?><br>
+                            E-mail: <?php echo $user["email"] ?><br>
+                            Wachtwoord: <td><?php echo $user["wachtwoord"] ?><br>
+                                Geboortedatum: <?php echo $user["geboortedatum"] ?><br>
+                                Telefoonnummer:
+                            <td><?php echo $user["telefoonnummer"] ?><br>
+                                Adres:
+                            <td><?php echo $user["adres"] ?><br>
+                                Postcode:
+                            <td><?php echo $user["postcode"] ?><br>
+                                <br>
+                            <button class="button button1"><a href="../deleteFunctions/account-delete.php?id=<?php echo $user["id"] ?>" class="btn btn-danger">Delete</a></button>
+                            <button class="button button2"><a href="../logout/logout.php">Logout</a></td></button>
+                            <button class="button button3"><a href="account-update.php?id=<?php echo $user["id"] ?>" class="btn btn-warning">Update</a></td></button>
+                        </h3>
+                        </td> 
+                    </tr>
+                </tbody>
+            <?php }
+            } else {
+                echo "<h2>";
+                echo "Je bent nog niet ingelogt,";
+                ?>
+                <a href="registreren.php">registreer</a>
+                <?php echo "of";?>
+                <a href="inloggen.php">login</a>
+                <?php echo "om hier informatie te zien.";?>
+            <?php }  ?>
         </div>
     </div>
 </body>
