@@ -6,10 +6,6 @@
     grid-row-gap: 5px;
     height: 100vh;
 }
-.main{
-    display: grid;
-    grid-area: 8 / 8 / 6/ 8;
-}
 
 .Main { 
     display: grid; 
