@@ -22,36 +22,36 @@ require "../database/database.php";
         <div class="Navbar">
             <?php include '../navbar/navbar.php' ?>
         </div>
-        <div class="Main" >
-            <div class="box" >
+        <div class="Main">
+            <div class="box">
                 <form action="../behandel/inloggenCheck.php" method="POST">
-                <div class="form">
-                    <h2>Login</h2>
-                    <div class="inputBox">
-                        <input type="text" name="email" required="required">
-                        <span>Email</span>
-                        <i></i>
+                    <div class="form">
+                        <h2>Login</h2>
+                        <div class="inputBox">
+                            <input type="text" name="email" required="required">
+                            <span>Email</span>
+                            <i></i>
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" name="wachtwoord" id="wachtwoord" required="required">
+                            <span>Wachtwoord</span>
+                            <i></i>
+                        </div>
+                        <?php
+                        if (!empty($_SESSION["wrong_pas"])) {
+                            if ($_SESSION["wrong_pas"] == true) {
+                                echo "<p style=color:red>Gegevens kloppen niet</p>";
+                            }
+                        } ?>
+                        <div class="links">
+                            <a href="#">Wachtwoord vergeten?</a>
+                            <a href="registreren.php">Account maken</a>
+                        </div>
+                        <input type="submit" value="Login">
                     </div>
-                    <div class="inputBox">
-                        <input type="password" name="wachtwoord" id="wachtwoord" required="required">
-                        <span>Wachtwoord</span>
-                        <i></i>
-                    </div>
-                    <?php
-                    if (!empty($_SESSION["wrong_pas"])) {
-                        if ($_SESSION["wrong_pas"] == true) {
-                            echo "<p style=color:red>Gegevens kloppen niet</p>";
-                        }
-                    } ?>
-                    <div class="links">
-                        <a href="#">Wachtwoord vergeten?</a>
-                        <a href="registreren.php">Account maken</a>
-                    </div>
-                    <input type="submit" value="Login">
-                </div>
                 </form>
             </div>
-        </div> 
+        </div>
     </div>
 </body>
 
