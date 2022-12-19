@@ -18,37 +18,20 @@
         <div class="Navbar">
             <?php include '../navbar/navbar.php' ?>
         </div>
-    
+
         <div class="Main">
-            <form action="../behandel/contactCheck.php" method="post">
-                <div class="form-rij">
-                    <div>
-                        <input type="text" name="naam" required><br>
-                        <label><b>E-mail</b></label>
-                    </div>
-                    <div>
-                        <input type="text" name="achternaam" required><br>
-                        <label><b>E-mail</b></label>
-                    </div>
-                    <div>
-                        <input type="text" name="email" required><br>
-                        <label><b>E-mail</b></label>
-                    </div>
+            <form class="middle" action="../behandel/contactCheck.php" method="post">
+                <div class="card-1">
+                    <label class="text"><b>E-mail:</b></label><br>
+                    <input id="emailVak" type="text" name="email" required><br>
+                    <label class="text"><b>Vraag:</b></label>
+                    <textarea id="berichtVak" name="bericht"></textarea>
+                    <button class="buttonContact" role="button"><span class="text">Verstuur</span></button>
                 </div>
-                <div class="form-rij-textarea">
-                    <div>
-                        <textarea id="subject" name="bericht"></textarea>
-                        <label><b>Bericht</b></label>
-                    </div>
-                </div>
-                <div class="form-rij submit-knop">
-                    <div class="input-data">
-                        <div class="inner"></div>
-                        <input type="submit" value="Sturen">
-                    </div>
-                </div>
-            </form>
         </div>
+    </div>
+    </form>
+    </div>
     </div>
 </body>
 
