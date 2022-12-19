@@ -1,12 +1,12 @@
 
   .account-informatie { 
     display: grid; 
-    grid-area: 7 / 1 / 20 / 9;
+    grid-area: 7 / 2 / 20 / 9;
     border-style: solid;
     /* border-width: 10px; */
     border-color: royalblue;
     background-color: #ed6307;
-    border-radius: 75px;
+    /* border-radius: 75px; */
     margin-bottom: -15px;
     justify-content: center;
     padding: 5px;
@@ -23,12 +23,11 @@ h2{
 }
 /*order vak styling */
 .order-informatie{
-    grid-area: 7 / 9 / 31 / 31;
+    grid-area: 7 / 9 / 30 / 30;
     background-color: #ed6307;
     border-style: solid;
-    /* border-width: 5px; */
     border-color:royalblue;   
-    border-radius: 75px;
+    /* border-radius: 75px; */
     margin-bottom: -15px;
     justify-content: center;
     padding: 10px;
@@ -40,20 +39,20 @@ h2{
     text-align: center;
 
 }
-/* idk */
-.idk h1{
+/* vak-c */
+.vak-c h1{
     text-align: center;
 }
-.idk{
+.vak-c{
     background-color: #ed6307;
     border-style: solid;
     border-color: royalblue;
-    grid-area: 21 / 1 / 31 / 9;
-    border-radius: 75px;
+    grid-area: 21 / 2 / 30 / 9;
+    /* border-radius: 75px; */
     text-align: center;
     padding: 15px;
 }
-.idk p{
+.vak-c p{
     padding: 10px;
 }
 
@@ -68,6 +67,6 @@ h2{
     margin: 4px 2px;
     cursor: pointer;
   }
-  .button1 {border-radius: 50%; background-color: red;}
-  .button2 {border-radius: 50%; background-color: black; }
-  .button3 {border-radius: 50%; background-color: royalblue;}
+  .button1 {border-radius: 35%; background-color: red;}
+  .button2 {border-radius: 35%; background-color: black; }
+  .button3 {border-radius: 35%; background-color: royalblue;}
