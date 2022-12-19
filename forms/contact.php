@@ -19,19 +19,16 @@
             <?php include '../navbar/navbar.php' ?>
         </div>
 
-        <div class="Main">
-            <form class="middle" action="../behandel/contactCheck.php" method="post">
-                <div class="card-1">
-                    <label class="text"><b>E-mail:</b></label><br>
-                    <input id="emailVak" type="text" name="email" required><br>
-                    <label class="text"><b>Vraag:</b></label>
-                    <textarea id="berichtVak" name="bericht"></textarea>
-                    <button class="buttonContact" role="button"><span class="text">Verstuur</span></button>
-                </div>
+        <div class="Contact-Vak">
+            <form method="POST" action="../behandel/contactCheck.php">
+                <h1>Contact Formulier</h1>
+                <label for="email">Email : </label>
+                <input type="text" id="email" name="email" value="" placeholder="Voer jouw email in..."> <br>
+                <label for="bericht">Bericht : </label>
+                <textarea id="bericht" name="bericht" placeholder="Bericht..."></textarea>
+                <button type="submit" class="button">Stuur</button>
+            </form>
         </div>
-    </div>
-    </form>
-    </div>
     </div>
 </body>
 
