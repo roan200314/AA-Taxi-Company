@@ -19,36 +19,52 @@
             <?php include '../navbar/navbar.php' ?>
         </div>
         <div class="Main">
-            <form class="middle" action="../behandel/bestellenCheck.php" method="post">
-                <div class="card-1">
-                    <div class="bestel">
-                        <label for="naam"><b>Naam</b></label>
-                        <input type="text" placeholder=" Vul Naam in.." name="naam" required><br>
-
-                        <label for="Last name"><b>Telefoonnummer</b></label>
-                        <input type="text" placeholder="Vul telefoonnummer in.." name="telefoonnummer" required><br>
-
-                        <label for="email"><b>E-mail</b></label>
-                        <input type="text" placeholder="Vul E-mail in.." name="email" required><br>
-
-                        <label for="Password"><b>Adres</b></label>
-                        <input type="text" placeholder="Vul adres in.." name="adres" required><br>
-
-                        <div class="dropdown">
-                            <button class="dropbtn">Chauffeur</button>
-                            <div class="dropdown-content">
-                                <input type="radio" name="check1" value="Khalifa"> Mia Khalifa<br>
-                                <input type="radio" name="check1" value="Sins"> Johnny Sins<br>
-                                <input type="radio" name="check1" value="Danger"> Abella Danger
-                            </div>
+            <div class="box">
+                <form action="../behandel/bestellenCheck.php" method="POST">
+                    <div class="form">
+                        <h2>Bestellen</h2>
+                        <div class="inputBox">
+                            <label for="naam"><b>Naam</b></label>
+                            <input type="text" placeholder=" Vul Naam in.." name="naam" required><br>
+                            <i></i>
                         </div>
-
-                        <button id="buttonBestel" type="submit" id="reg-button">Bestellen</button>
+                        <div class="inputBox">
+                            <label for="Last name"><b>Telefoonnummer</b></label>
+                            <input type="text" placeholder="Vul telefoonnummer in.." name="telefoonnummer" required><br>
+                            <i></i>
+                        </div>
+                        <div class="inputBox">
+                            <label for="email"><b>E-mail</b></label>
+                            <input type="text" placeholder="Vul E-mail in.." name="email" required><br>
+                            <i></i>
+                        </div>
+                        <div class="inputBox">
+                            <label for="Password"><b>Adres</b></label>
+                            <input type="text" placeholder="Vul adres in.." name="adres" required><br>
+                            <i></i>
+                        </div>
+                        <div class="inputBox">
+                            <div class="dropdown">
+                                <button class="dropbtn">Chauffeur</button>
+                                <div class="dropdown-content">
+                                    <input type="radio" name="check1" value="Khalifa"> Mia Khalifa<br>
+                                    <input type="radio" name="check1" value="Sins"> Johnny Sins<br>
+                                    <input type="radio" name="check1" value="Danger"> Abella Danger
+                                </div>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="links">
+                            <a href="#">Wachtwoord vergeten?</a>
+                            <a href="registreren.php">Account maken</a>
+                        </div>
+                        <input type="submit" value="Login">
                     </div>
-                </div>
-            </form>
+                </form>
             </div>
         </div>
+    </div>
+    </div>
 </body>
 
 </html>
