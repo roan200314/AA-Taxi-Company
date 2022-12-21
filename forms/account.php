@@ -37,7 +37,7 @@ if (!empty($_SESSION['userData'])) {
         <div class="order-informatie">
                 <h1>Bestel informatie</h1>
         </div>
-        <div class="idk">
+        <div class="vak-c">
             <h1>RandomInfo</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum expedita reprehenderit, magnam unde deleniti cumque eveniet. Aspernatur cum asperiores ex, voluptates ut esse soluta voluptatum qui, porro autem nostrum tenetur.</p>
         </div>
@@ -63,9 +63,9 @@ if (!empty($_SESSION['userData'])) {
                                 Postcode:
                             <td><?php echo $user["postcode"] ?><br>
                                 <br>
-                            <button class="button button1"><a href="../deleteFunctions/account-delete.php?id=<?php echo $user["id"] ?>" class="btn btn-danger">Delete</a></button>
-                            <button class="button button2"><a href="../logout/logout.php">Logout</a></td></button>
-                            <button class="button button3"><a href="account-update.php?id=<?php echo $user["id"] ?>" class="btn btn-warning">Update</a></td></button>
+                            <button class="button button1"><a href="../deleteFunctions/account-delete.php?id=<?php echo $user["id"] ?>">Verwijder</a></button>
+                            <button class="button button2"><a href="../logout/logout.php">Log uit</a></td></button>
+                            <button class="button button3"><a href="account-update.php?id=<?php echo $user["id"] ?>" class="btn btn-warning">Bewerk</a></td></button>
                         </h3>
                         </td> 
                     </tr>

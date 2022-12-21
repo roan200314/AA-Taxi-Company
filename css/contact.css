@@ -1,9 +1,10 @@
 .Contact-Vak{
   grid-area: 9  / 9 / 30 / 23;
-  background-color: #db842c;
-  border-radius: 75px;
+  background-color: #ed6307;
+  /* border-radius: 75px; */
   border-style: solid;
-  border-color: #ff4500;
+  /* border-color: #db842c; */
+  border-color: #a24c13;
 }
 h1{
   margin: 5%;
