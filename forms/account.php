@@ -72,14 +72,15 @@ if (!empty($_SESSION['userData'])) {
                 </tbody>
             <?php }
             } else {
-                echo "<h2>";
+                ?>
+                <p class="txt"><?php
                 echo "Je bent nog niet ingelogt,";
                 ?>
                 <a href="registreren.php">registreer</a>
                 <?php echo "of";?>
                 <a href="inloggen.php">login</a>
                 <?php echo "om hier informatie te zien.";?>
-            <?php }  ?>
+            <?php }  ?></p>
         </div>
     </div>
 </body>
