@@ -52,7 +52,6 @@
                             <div class="form-right">
                                 <div class="inputBox">
                                     <input type="date" name="geboortedatum" required>
-                                    <label>geboortedatum</label>
                                     <i></i>
                                 </div>
                                 <div class="inputBox">
@@ -65,9 +64,14 @@
                                     <span>postcode</span>
                                     <i></i>
                                 </div>
+                                <div class="inputBox">
+                                    <input type="text" name="telefoonnummer" required>
+                                    <span>Telefoonnummer</span>
+                                    <i></i>
+                                </div>
 
                                 <div class="button">
-                                    <button id="buttonBestel" type="submit" id="reg-button">Registreren</button>
+                                    <button id="buttonBestel" type="submit" class="button-73">Registreren</button>
                                 </div>
                             </div>
                         </div>

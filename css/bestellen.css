@@ -27,7 +27,7 @@
   grid-area: 2/18/5/7;
   position: relative;
   width: 380px;
-  height: 420px;
+  height: 500px;
   background: #1c1c1c;
   border-radius: 8px;
   overflow: hidden;
@@ -94,6 +94,7 @@
 
 }
 .inputBox input{
+  float: right;
   position: relative;
   width: 100%;
   padding: 20px 10px 10px;
@@ -107,7 +108,7 @@
 }
 
 .inputBox span{
-  position: absolute;
+  float: right;
   left: 0;
   padding: 20px 0px 10px;
   font-size: 1em;
