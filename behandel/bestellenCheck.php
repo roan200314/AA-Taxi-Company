@@ -2,22 +2,19 @@
 
 print_r($_POST);
 if (
-    $_POST['naam'] != '' && $_POST['telefoonnummer'] != '' && $_POST['email'] != '' && $_POST['adres'] != ''
-    && $_POST['check1'] != '' 
+    $_POST['naam'] != '' && $_POST['email'] != '' && $_POST['check1'] != ''
 ) {
 
 
     $naam = $_POST['naam'];
-    $telefoonnummer = $_POST['telefoonnummer'];
     $email = $_POST['email'];
-    $adres = $_POST['adres'];
     $check1 = $_POST['check1'];
 
 
     require "../database/database.php";
 
-    $sql = "INSERT INTO orders (naam, telefoonnummer, email, adres, chauffeur)
-    VALUES ('$naam', '$telefoonnummer', '$email', '$adres', '$check1')";
+    $sql = "INSERT INTO orders (naam, email, chauffeur, ophaaltijd)
+    VALUES ('$naam', '$email', '$check1', now())";
 
     if ($mysqli->query($sql) === TRUE) {
         echo "New record created successfully";

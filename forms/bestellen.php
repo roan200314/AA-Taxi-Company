@@ -29,20 +29,11 @@
                             <i></i>
                         </div>
                         <div class="inputBox">
-                            <label for="Last name"><b>Telefoonnummer</b></label>
-                            <input type="text" placeholder="Vul telefoonnummer in.." name="telefoonnummer" required><br>
+                            <label for="email"><b>email</b></label>
+                            <input type="text" placeholder="Vul email in.." name="email" required><br>
                             <i></i>
                         </div>
-                        <div class="inputBox">
-                            <label for="email"><b>E-mail</b></label>
-                            <input type="text" placeholder="Vul E-mail in.." name="email" required><br>
-                            <i></i>
-                        </div>
-                        <div class="inputBox">
-                            <label for="Password"><b>Adres</b></label>
-                            <input type="text" placeholder="Vul adres in.." name="adres" required><br>
-                            <i></i>
-                        </div>
+
                         <div class="inputBox">
                             <div class="dropdown">
                                 <button class="dropbtn">Chauffeur</button>
@@ -54,11 +45,7 @@
                             </div>
                             <i></i>
                         </div>
-                        <div class="links">
-                            <a href="#">Wachtwoord vergeten?</a>
-                            <a href="registreren.php">Account maken</a>
-                        </div>
-                        <input type="submit" value="Login">
+                        <input type="submit" value="Bestel">
                     </div>
                 </form>
             </div>
