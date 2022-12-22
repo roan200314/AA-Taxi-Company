@@ -38,7 +38,7 @@ if (!empty($_SESSION['userData'])) {
                 <h1>Bestel informatie</h1>
         </div>
         <div class="vak-c">
-            <h1>RandomInfo</h1>
+            <h1>Info</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum expedita reprehenderit, magnam unde deleniti cumque eveniet. Aspernatur cum asperiores ex, voluptates ut esse soluta voluptatum qui, porro autem nostrum tenetur.</p>
         </div>
         <div class="account-informatie">
